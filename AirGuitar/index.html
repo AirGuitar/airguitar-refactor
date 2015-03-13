@@ -54,44 +54,517 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="#" />
 	<link rel="apple-touch-icon" sizes="72x72" href="#" />
 	<link rel="apple-touch-icon" sizes="144x144" href="#" />
-
 	<!-- Modernizr -->
 	<script src="_include/js/modernizr.js"></script>
-
 	<!-- Analytics -->
 	<!-- End Analytics -->
 	
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<body ng-app="airguitar" ng-controller="ScrollCtrl">
-	<!-- Header -->	
-	<div ng-include='"templates/header.html"'>
+<body>
+	<!-- Splash Screen -->
+	<div class="ole">
+		<section id="jSplash">
+			<div id="circle"></div>
+		</section>
 	</div>
+	<!-- End of Splash Screen -->
+	<!-- Homepage Slider -->
+	<div id="home-slider">
+		<div class="overlay">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="slider-text">
+						<div id="slidecaption"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="control-nav">
+			<a id="prevslide" class="load-item">
+				<i class="font-icon-arrow-simple-left"></i>
+			</a>
+			<a id="nextslide" class="load-item">
+				<i class="font-icon-arrow-simple-right"></i>
+			</a>
+			<ul id="slide-list">
+			</ul>
+			<a id="nextsection" href="#work" class="bg-orange">
+				<i class="font-icon-arrow-simple-down"></i>
+			</a>
+		</div>
+	</div>
+	<!-- End Homepage Slider -->
+	<!-- Header -->
+	<header class="ag-orange">
+		<div class="sticky-nav">
+			<a id="mobile-nav" class="menu-nav" href="#">
+			</a>
+			
+			<div id="logo">
+				<a id="goUp" href="#home-slider" title="AirGuitar | Guitar Pedals on the Cloud">
+				</a>
+			</div>
+			
+			<nav id="menu">
+				<ul id="menu-nav">
+					<li>
+						<a href="#home-slider">Home</a>
+					</li>
+					<li>
+						<a href="#work">Our Work</a>
+					</li>
+					<li>
+						<a href="#about">About Us</a>
+					</li>
+					<li>
+						<a href="#pricing">Pricing</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+					<li>
+						<a href="#">Try AirGuitar</a>
+					</li>
+					<li>
+						<a href="#">Login</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<!-- End Header -->
-
 	<!-- Page Content -->
-	<div ng-view>
+	<!-- Our Work Section -->
+	<div id="work" class="page">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">AirGuitar</h2>
+						<h3 class="title-description">Guitar Pedals on the Cloud.</h3>
+						
+						<div class="page-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus.
+								Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus.
+								<a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+			<!-- Features -->
+			<div class="row">
+				<div class="span4">
+					<div class="services-box">
+						<div class="icon">
+							<span class="font-icon-cog"></span>
+						</div>
+						<h3>Deployment</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.
+						</p>
+					</div>
+				</div>
+				
+				<div class="span4">
+					<div class="services-box">
+						<div class="icon">
+							<span class="font-icon-layer"></span>
+						</div>
+						<h3>Optimization</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.
+						</p>
+					</div>
+				</div>
+				
+				<div class="span4">
+					<div class="services-box">
+						<div class="icon">
+							<span class="font-icon-map"></span>
+						</div>
+						<h3>Manages Services</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- End Features -->
+		</div>
 	</div>
+	<!-- End Our Work Section -->
+	<!-- About Section -->
+	<div id="about" class="page-alternate">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">About Us</h2>
+						<h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+						
+						<div class="page-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus.
+								Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus.
+								<a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+			
+			<div class="row margin-40">
+				<div class="span4">
+					<h3>Our Culture</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus.
+						Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum.
+					</p>
+					
+					<p>Duis in tortor scelerisque felis mattis imperdiet. Donec at <a href="#">libero tellus</a>. Suspendisse consectetur consectetur bibendum.</p>
+				</div>
+				
+				<div class="span4">
+					<h3>Our Method</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut <strong>pretium nisl</strong> non justo condimentum id tincidunt nunc faucibus.
+						Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum.
+					</p>
+					
+					<p>Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.</p>
+				</div>
+				
+				<div class="span4">
+					<h3>Our Skills</h3>
+					
+					<div class="progress-bar">
+						<div class="progress">
+							<span class="field">Design</span>
+							<span class="field-value">60%</span>
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+					</div>
+					
+					<div class="progress-bar">
+						<div class="progress">
+							<span class="field">Development</span>
+							<span class="field-value">75%</span>
+							<div class="bar" style="width: 75%;"></div>
+						</div>
+					</div>
+					
+					<div class="progress-bar">
+						<div class="progress">
+							<span class="field">UX/UI</span>
+							<span class="field-value">33%</span>
+							<div class="bar" style="width: 33%;"></div>
+						</div>
+					</div>
+					
+					<div class="progress-bar">
+						<div class="progress">
+							<span class="field">Branding</span>
+							<span class="field-value">100%</span>
+							<div class="bar" style="width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="sep">
+				<span class="separator"></span>
+			</div>
+			
+			<!-- The Crew -->
+			<div class="row">
+				
+				<!-- Start Profile -->
+				<div class="span3 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span>
+							<span class="overlay-text-thumb">CTO/Founder</span>
+						</div>
+						<img src="_include/img/profile/profile-01.jpg" alt="John Doe" />
+					</div>
+					<h3 class="profile-name">John Doe</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>
+					</p>
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+				
+				<!-- Start Profile -->
+				<div class="span3 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span>
+							<span class="overlay-text-thumb">Creative Director</span>
+						</div>
+						<img src="_include/img/profile/profile-02.jpg" alt="Jane Helf" />
+					</div>
+					<h3 class="profile-name">Jane Helf</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
+						Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-email"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+				
+				<!-- Start Profile -->
+				<div class="span3 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span>
+							<span class="overlay-text-thumb">Lead Designer</span>
+						</div>
+						<img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus" />
+					</div>
+					<h3 class="profile-name">Joshua Insanus</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
+						Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+				<!-- Start Profile -->
+				<div class="span3 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span>
+							<span class="overlay-text-thumb">Lead Designer</span>
+						</div>
+						<img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus" />
+					</div>
+					<h3 class="profile-name">Joshua Insanus</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
+						Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+			</div>
+			<!-- End The Crew -->
+		</div>
+	</div>
+	<!-- End About Section -->
+	<!-- Pricing -->
+	<div id="pricing" class="page">
+		<div class="container">
+			<!-- Contact Title -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Pricing</h2>
+						<h3 class="title-description">The key to a successful network operation is to provide high quality services.</h3>
+						
+						<div class="page-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus.
+								Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus.
+								<a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+			
+			<!-- Pricing Table -->
+			<div class="row margin-40">
+				<div class="span9">
+					<h3>Our Technology</h3>
+					<p>
+						Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. Fusce elementum velit vel dolor iaculis egestas.
+						Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh. Proin id condimentum sem. Morbi vitae dui in magna <a href="#">vestibulum suscipit</a> vitae vel nunc. Integer ut risus nulla.
+					</p>
+					<p>
+						Malesuada tortor, nec scelerisque lorem mattis. Nunc et rutrum consetetur sadipscing elitr, sed diam nonumy at volutpat. Sed consectetur <em>suscipit lorem</em> nunc adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet ut.
+						Maecenas sed justo varius velit imperdiet bibendum et rutrum.
+					</p>
+					<p>
+						Malesuada tortor, nec scelerisque lorem mattis. Nunc et rutrum consetetur sadipscing elitr, sed diam nonumy at volutpat. <strong>Sed consectetur</strong> suscipit lorem nunc adipiscing elit.
+						Integer commodo tristique odio, quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum et rutrum.
+					</p>
+				</div>
+				
+				<div class="span3">
+					<h3>Why Choose Us <span class="color-text">?</span></h3>
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Pricing Table -->
+		</div>
+	</div>
+	<!-- End Pricing -->
+	<!-- Big Blockquote -->
+	<div class="big-quote page-alternate">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<p>We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.</p>
+					<span class="font-icon-blockquote"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Big Blockquote -->
+	
+	<!-- Contact -->
+	<div id="contact" class="page">
+		<div class="container">
+			<!-- Contact Title -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Contact Us</h2>
+						<h3 class="title-description">If you want know more about us or have any queries, feel free to drop us a message.</h3>
+						
+						<div class="page-description">
+							<p>
+								We're glad to recieve any message you might have for us. If you're interested on what we're doing and want to join us, let us know! If you're confused and want to know what the hell what we're doing, feel free to ask us. And even if you're just passing by and browsing around, do say hi. Don't worry. We don't bite. We're more than happy to address any of your messages no matter how ridiculous you think it is.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Contact Title -->
+			<!-- Contact Information -->
+			<div class="row">
+				<!-- Contact Details -->
+				<div class="span4">
+					<h3 class="all-caps">Contact Details</h3>
+					<!-- Google Map -->
+					<div id="map-area">
+						<div class="map" id="locationMap"></div>
+					</div>
+					<!-- End Google Map -->
+					<div class="contact-details">
+						<br/>
+						<ul>
+							<li><a href="#">airguitar.cc@gmail.com</a></li>
+							<li>+65 8700 4358</li>
+							<li>
+								SMU Labs
+								<br />
+								71 Stamford Road Singapore 178895
+								<br />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Contact Details -->
+				<!-- Contact Form -->
+				<div class="span8">
+					<h3 class="all-caps">Contact Form</h3>
+					<form id="contact-form" class="contact-form" action="#" />
+						<p class="contact-name">
+							<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+						</p>
+						<p class="contact-email">
+							<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+						</p>
+						<p class="contact-message">
+							<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+						</p>
+						<p class="contact-submit">
+							<a id="contact-submit" class="submit" href="#">Send Your Message</a>
+						</p>
+						
+						<div id="response">
+							
+						</div>
+					</form>
+				</div>
+				<!-- End Contact Form -->
+			</div>
+			<!-- End Contact Information -->
+		</div>
+	</div>
+	<!-- End Contact -->
 	<!-- End Page Content -->
-
 	<!-- Footer -->
-	<div ng-include='"templates/footer.html"'>
+	<div id="social-area" class="page bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<nav id="social">
+						<ul>
+							<li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+							<li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+							<li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+							<li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
 	</div>
+	<footer class="bg-gray">
+		<p class="credits">&copy;2015 AirGuitar.</p>
+	</footer>
 	<!-- End Footer -->
-
 	<!-- Back To Top -->
 	<a id="back-to-top" href="#">
 		<i class="font-icon-arrow-simple-up"></i>
 	</a>
 	<!-- End Back to Top -->
-
 	<!-- Other JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
-	<script src="_include/js/airguitar.js"></script>
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
+	<script src="_include/js/map.js"></script>
 	<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
 	<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
 	<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->

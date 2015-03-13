@@ -6,21 +6,14 @@ var airguitar = angular.module('airguitar', ['ngRoute']);
 airguitar.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider
+
         // Home
         .when("/", {
             templateUrl: "partials/home.html",
-            controller: "PageCtrl"
+            controller: "HomeCtrl"
         })
     }
 ]);
-
-
-/**
- * Controls Home Page Routing
- */
-airguitar.controller("PageCtrl", function($scope, $location, $http) {
-    console.log("Page Controller is active.");
-});
 
 /**
  * Smooth Scroll for anchors
@@ -78,10 +71,19 @@ airguitar.service('anchorSmoothScroll', function() {
             }
             return y;
         }
-
     };
-
 });
+
+
+/**
+ * Controls Home Page Routing
+ */
+airguitar.controller('HomeCtrl', [
+
+    function($scope, $location, $http) {
+        console.log("Home Controller is active.");
+    }
+]);
 
 /**
  * Controls Anchor Scrolling

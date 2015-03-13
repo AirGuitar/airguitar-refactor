@@ -1,21 +1,49 @@
 /*
  * Background color styles
- * ag = airguitar
  */
-.ag-orange{
+.bg-orange{
 	background: #F7770A;
 }
 
-.ag-gray{
+.bg-gray{
 	background: #191919;
 }
 
-.ag-light-gray{
+.bg-light-gray{
 	background: #F5F6F6;
 }
 
+/*
+ * Foreground styles
+ */
+.fg-orange{
+	color: #F7770A;
+}
+
+/*
+ * Text styles
+ */
+.all-caps{
+	text-transform: uppercase;
+}
+
+/*
+ * Shadow color styles
+ */
 #social-area{
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+/*
+ * Slide content styles
+ */
+#home-slider a:hover{
+	color: #FFFFFF;
+}
+
+#home-slider .slider-detail{
+	font-size: 36px;
+	text-transform: none;
 }
