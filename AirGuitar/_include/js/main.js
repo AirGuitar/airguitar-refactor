@@ -79,17 +79,17 @@ jQuery(function($) {
             slides: [ // Slideshow Images
                 {
                     image: '_include/img/slider-images/image01.jpg',
-                    title: '<div class="slide-content"><strong><span class="fg-orange">Try</span> AirGuitar</strong></div><div class="slider-detail">Give our app a spin over <a href="">here</a></div>',
+                    title: '<div class="slide-content"><strong><span class="fg-orange">Try</span> AirGuitar</strong></div><div class="slider-detail">Give our app a spin over <a href="ohno.html#">here</a></div>',
                     thumb: '',
                     url: ''
                 }, {
                     image: '_include/img/slider-images/image01.jpg',
-                    title: '<div class="slide-content"><strong>We are <span class="fg-orange">Hiring</span></strong></div><div class="slider-detail">Check out our onboarding video over at <a href="">YouTube</a></div>',
+                    title: '<div class="slide-content"><strong>We are <span class="fg-orange">Hiring</span></strong></div><div class="slider-detail">Check out our onboarding video over at <a href="ohno.html#">YouTube</a></div>',
                     thumb: '',
                     url: ''
                 }, {
                     image: '_include/img/slider-images/image01.jpg',
-                    title: '<div class="slide-content"><strong>Leave your <span class="fg-orange">Feedback</span></strong></div><div class="slider-detail">Share your thoughts with us <a href="">here</a></div>',
+                    title: '<div class="slide-content"><strong>Leave your <span class="fg-orange">Feedback</span></strong></div><div class="slider-detail">Share your thoughts with us <a href="ohno.html#">here</a></div>',
                     thumb: '',
                     url: ''
                 }
