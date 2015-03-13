@@ -1,17 +1,15 @@
 {
   "name": "airguitar",
   "version": "0.0.1",
-  "description": "NodeJS demo app for SMU integrating PayPal billing agreement",
+  "description": "NodeJS app for AirGuitar",
   "main": "paypal.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node paypal.js"
+    "start": "node airguitar-node.js"
   },
-  "author": "laurenceputra",
+  "author": "kimevangelista",
   "license": "GNU GPL v3",
   "dependencies": {
-    "express": "^4.11.2",
-    "paypal-rest-sdk": "^1.5.0",
-    "firebase": "^2.1.2"
+    "express": "^4.11.2"
   }
 }
