@@ -2,7 +2,7 @@
   "name": "airguitar",
   "version": "0.0.1",
   "description": "NodeJS app for AirGuitar",
-  "main": "paypal.js",
+  "main": "airguitar-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node airguitar-node.js"
