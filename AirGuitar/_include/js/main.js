@@ -83,12 +83,12 @@ jQuery(function($) {
                     thumb: '',
                     url: ''
                 }, {
-                    image: '_include/img/slider-images/image01.jpg',
+                    image: '_include/img/slider-images/image02.jpg',
                     title: '<div class="slide-content"><strong>We are <span class="fg-orange">Hiring</span></strong></div><div class="slider-detail">Check out our onboarding video over at <a href="ohno.html#">YouTube</a></div>',
                     thumb: '',
                     url: ''
                 }, {
-                    image: '_include/img/slider-images/image01.jpg',
+                    image: '_include/img/slider-images/image03.jpg',
                     title: '<div class="slide-content"><strong>Leave your <span class="fg-orange">Feedback</span></strong></div><div class="slider-detail">Share your thoughts with us <a href="ohno.html#">here</a></div>',
                     thumb: '',
                     url: ''
